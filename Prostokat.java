@@ -8,7 +8,7 @@ public class Prostokat extends Thread{
         this.wysokosc = wysokosc;
         this.szerokosc = szerokosc;
         zatrzymaj = false;
-        losowanieKoloru();
+        losowanieKoloru();  //tu jest mala zmiana
     }
 
     private void losowanieKoloru(){
