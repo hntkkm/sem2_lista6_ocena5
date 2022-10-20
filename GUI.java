@@ -98,21 +98,6 @@ public class GUI extends JFrame  {
 }
 
 
-//                JLabel label = new JLabel(Integer.toString(j));
-//                label.setSize(700 / wymiary[0], 700 / wymiary[1]);
-//                label.setOpaque(true);
-//
-//                label.setName(String.valueOf(i));
-//
-//                ZmianaKoloru watek = new ZmianaKoloru(label);
-//                watek.setName(String.valueOf(i));
-//
-//                watek.start();
-//                panel.add(label);
-//
-
-///////////////////////////////////////////////////////////////////////////////////////
-
 //            Thread thread = new Thread(() -> {
 //
 //                this.labelTemp = label;
