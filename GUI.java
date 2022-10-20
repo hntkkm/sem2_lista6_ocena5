@@ -20,9 +20,9 @@ public class GUI extends JFrame  {
         panel = new JPanel();
     }
 
-    public void start(Integer[] wymiary){
-        wysokosc = wymiary[0];
-        szerokosc = wymiary[1];
+    public void start(Integer[] wymiarki){
+        wysokosc = wymiarki[0];
+        szerokosc = wymiarki[1];
 
         panel.setLayout(new GridLayout(wysokosc, szerokosc));
         jLabels = new JLabel[wysokosc][szerokosc];
