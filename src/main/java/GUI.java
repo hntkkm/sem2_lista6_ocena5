@@ -20,9 +20,9 @@ public class GUI extends JFrame  {
         panel = new JPanel();
     }
 
-    public void start(Integer[] wymiarki){
-        wysokosc = wymiarki[0];
-        szerokosc = wymiarki[1];
+    public void start(Integer[] wymiarkiki){
+        wysokosc = wymiarkiki[0];
+        szerokosc = wymiarkiki[1];
 
         panel.setLayout(new GridLayout(wysokosc, szerokosc));
         jLabels = new JLabel[wysokosc][szerokosc];
@@ -98,30 +98,6 @@ public class GUI extends JFrame  {
 }
 
 
-//            Thread thread = new Thread(() -> {
-//
-//                this.labelTemp = label;
-//                while(true) {
-//                    try {
-//                        double[] kolor = randomiser.losowanie(3);
-//                        Color kolorRGB = new Color((int) kolor[0], (int) kolor[1], (int) kolor[2]);
-//                        labelTemp.setBackground(kolorRGB);
-//                        Thread.sleep((long) szybkoscDzialania * (int) randomiser.losowanie(1)[0]);
-//                        System.out.println("label.getName()");
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//
-////                System.out.println("T0 start");
-////                for (int j = 0; j < 10 ; j++) {
-////                    System.out.println("T0 " + j);
-////                }
-////                System.out.println("T0 stop");
-//            });
-//            Thread labelWatek = new Thread();
-//            labelWatek.start();
-//            new GUI(label);
 
 
 //            try {
