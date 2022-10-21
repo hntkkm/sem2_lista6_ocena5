@@ -30,11 +30,13 @@ public class GUI extends JFrame  {
 
         for ( int i = 0; i < wysokosc; i++){
             for (int j = 0; j < szerokosc; j++) {
-                jLabels[i][j] = new JLabel();                                    // tworzę tablicę label'ów
-//                jLabels[i][j].setText(Integer.toString(j+i));
+                jLabels[i][j] = new JLabel();                                    
+                // tworzę tablicę label'ów
+                // jLabels[i][j].setText(Integer.toString(j+i));
                 jLabels[i][j].setSize(700 / wysokosc, 700 / szerokosc);
                 jLabels[i][j].setOpaque(true);
-                Prostokat watek = new Prostokat(i,j);            //dodaję wątki do label'ów
+                Prostokat watek = new Prostokat(i,j); 
+                //dodaję wątki do label'ów
                 prostokaty[i][j] = watek;
                 watek.setName(String.valueOf(i+j));
                 panel.add(jLabels[i][j]);
@@ -51,10 +53,13 @@ public class GUI extends JFrame  {
 
                     @Override
                     public void mousePressed(MouseEvent e) {}
+                    
                     @Override
                     public void mouseReleased(MouseEvent e) {}
+                    
                     @Override
                     public void mouseEntered(MouseEvent e) {}
+                    
                     @Override
                     public void mouseExited(MouseEvent e) {}
                 });
@@ -133,6 +138,7 @@ public class GUI extends JFrame  {
 ////                    System.out.println("T0 " + j);
 ////                }
 ////                System.out.println("T0 stop");
+//            CONFLICTING COMMENT :P
 //            });
 //            Thread labelWatek = new Thread();
 //            labelWatek.start();
